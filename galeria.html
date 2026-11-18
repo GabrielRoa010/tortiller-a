@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        background-color:rgb(255, 152, 68) ;
+        text-align: center;
+    }
+    .galeria{
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        margin-top: 40px;
+    }
+    .galeria img{
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 15px;
+        border: 3px solid rgb(0, 0, 0);
+        box-shadow: 0 4px 10px #ff0000;
+        transition: all 0.3s ease;
+    }
+    .galeria img:hover{
+        transform:scale(1.1);
+        border-color: rgb(255, 255, 255);
+        box-shadow: 0 10px 25px rgb(255, 255, 255);
+        cursor: pointer;
+    }
+</style>
+<body>
+    <center>
+    <h1>GALERIA</h1>
+    </center>
+   <div class="galeria">
+        <img src="img/tortilleria.jpeg">
+        <img src="img/limpio.jpeg">
+        <img src="img/molino.jpeg">
+    </div>
+    <div class="galeria">
+        <img src="img/comal.jpeg">
+        <img src="img/friendo.jpeg">
+        <img src="img/productos.jpeg">
+    </div>
+</body>
+</html>
